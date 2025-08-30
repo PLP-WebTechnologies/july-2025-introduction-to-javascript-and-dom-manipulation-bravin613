@@ -1,0 +1,98 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Fundamentals - Safaricom Growth</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📱 Safaricom Growth - JavaScript Fundamentals by Bravin Musali</h1>
+        <p>Learning JavaScript basics through Safaricom's business concepts</p>
+
+        <!-- Variables, Data Types, Conditionals -->
+        <div class="section">
+            <h2>Part 1: Growth Calculator (Variables & Conditionals)</h2>
+            
+            <label>Current Revenue (KES Billions): </label>
+            <input type="number" id="currentRevenue" value="388">
+            <br>
+            
+            <label>Previous Revenue (KES Billions): </label>
+            <input type="number" id="previousRevenue" value="348">
+            <br>
+            
+            <button onclick="calculateGrowth()">Calculate Growth</button>
+            <button onclick="clearResults()">Clear</button>
+            
+            <div class="output" id="growthOutput">Click "Calculate Growth" to see results...</div>
+        </div>
+
+        <!--Functions -->
+        <div class="section">
+            <h2>Part 2: M-PESA Fee Calculator (Functions)</h2>
+            
+            <label>Transaction Amount (KES): </label>
+            <input type="number" id="amount" placeholder="1000">
+            <br>
+            
+            <label>Transaction Type: </label>
+            <select id="transactionType">
+                <option value="send">Send Money</option>
+                <option value="withdraw">Withdraw</option>
+                <option value="pay">Pay Bill</option>
+            </select>
+            <br>
+            
+            <button onclick="calculateFee()">Calculate Fee</button>
+            
+            <div class="output" id="feeOutput">Enter amount and type to calculate M-PESA fees...</div>
+        </div>
+
+        <!--  Loops -->
+        <div class="section">
+            <h2>Part 3: Customer Growth Simulation (Loops)</h2>
+            
+            <label>Starting Customers (millions): </label>
+            <input type="number" id="startingCustomers" value="30">
+            <br>
+            
+            <label>Monthly Growth Rate (%): </label>
+            <input type="number" id="growthRate" value="2">
+            <br>
+            
+            <label>Number of Months: </label>
+            <input type="number" id="months" value="12">
+            <br>
+            
+            <button onclick="simulateGrowth()">Simulate Growth</button>
+            
+            <div class="output" id="simulationOutput">Set parameters and click "Simulate Growth"...</div>
+        </div>
+
+        <!--  DOM Manipulation -->
+        <div class="section">
+            <h2>Part 4: Service Manager (DOM Manipulation)</h2>
+            
+            <label>Service Name: </label>
+            <input type="text" id="serviceName" placeholder="Enter service name">
+            <br>
+            
+            <button onclick="addService()">Add Service</button>
+            <button onclick="removeAllServices()">Remove All</button>
+            <button onclick="countServices()">Count Services</button>
+            
+            <div class="output" id="domOutput">Add services to see DOM manipulation in action...</div>
+            
+            <div id="servicesList">
+                <h3>Safaricom Services:</h3>
+                <div id="servicesContainer">
+                    <!-- Services will be added here dynamically -->
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
